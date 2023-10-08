@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "mjpeg-proxy": "^0.3.0"
+  }
+}
