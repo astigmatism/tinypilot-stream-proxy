@@ -140,11 +140,11 @@ var port = process.argv[2];
 var mjpegUrl = process.argv[3];
 
 if (!mjpegUrl) {
-    console.error("Please provide the MJPEG URL as a command line argument.");
+    console.error("Please provide the MJPEG URL as a command line argument.")
     process.exit(1);
 }
 
-app.get('/index.jpg', new MjpegProxy(mjpegUrl).proxyRequest);
+app.get('/', new MjpegProxy(mjpegUrl).proxyRequest);
 app.listen(port, () => {
-    console.log(`Server is running on port 8080 and proxying ${mjpegUrl}`);
+    console.log(`Server is running on port ${port} and proxying ${mjpegUrl}`)
 })
