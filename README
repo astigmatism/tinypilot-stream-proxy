@@ -1,0 +1,11 @@
+To run:
+
+node server.js [port] [stream source url]
+
+Exmaple:
+
+node server.js 8080 "https://192.168.1.191/stream?advance_headers=1"
+
+Stream available at:
+
+http://localhost:8080/index.jpg
